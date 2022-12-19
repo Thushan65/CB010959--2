@@ -1,0 +1,75 @@
+<!--TEA SALES PAGE HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head Secti0n-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Sellers</title>
+    <link rel="stylesheet" href="./tea sales.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<!--Header Section-->
+<header id="header">
+
+    <div class="navbar">
+        <a href="./home.html"><img src="./seresdipity.png" alt="Logo" id="logo"></a>
+    
+        <!--Navigation Bar-->
+        <ul id="navigation">
+            <li><a href="./home.html" target="_blank">Home</a></li>
+            <li><a href="./tea plantation.html" target="_blank">Tea Plantations</a></li>
+            <li><a href="./tea museum.html" target="_blank">Tea Museums</a></li>
+            <li><a href="./by products.html" target="_blank">By Products</a></li>
+            <li><a href="./tea sales.html" target="_blank">Tea Sales</a></li>
+            <li><a href="./purchase.html" target="_blank">Purchase & Donate</a></li>
+        </ul>
+    </div>
+
+    <!--Hamburger Menu-->
+    <div id="menubtn">
+        <img src="./menu.jpg" alt="menu" id="menu">
+    </div>
+
+
+    <div id="container">
+        <h1 id="mainheader">Tea Sellers in Sri Lanka</h1>
+
+        <button type="button"><span></span><a href="./seller1.html" target="_blank">Dilmah</a></button>
+        <button type="button"><span></span><a href="./seller2.html" target="_blank">Zesta</a></button>
+    </div>
+
+    <!--Java Script-->
+    <script>
+        var menubtn =document.getElementById("menubtn")
+        var navigation =document.getElementById("navigation")
+        var menu =document.getElementById("menu")
+        navigation.style.right="-250px";
+
+        menubtn.onclick=function(){
+            if(navigation.style.right=="-250px"){
+                navigation.style.right="0";
+            }
+            else{
+                navigation.style.right="-250px";
+            }
+        }
+    </script>
+
+</header>
+
+<!--End of the page-->
+</html>

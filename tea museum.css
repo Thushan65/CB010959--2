@@ -1,0 +1,346 @@
+/*TEA MUSEUM PAGE CSS*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Header Section*/
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./museum1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom:-5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+#mainheader{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 80px;
+    margin-top: 80px;
+    font-family: 'Kaushan Script', cursive;
+    animation: textup 12s linear infinite;
+    transform: translateY(150px);
+}
+@keyframes textup{
+    10%{transform: translateY(0px);}
+    100%{transform: translateY(0px);}
+}
+
+@media screen and (max-width:1220px) {
+
+    header ul{
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        right: -250px;
+        top: 0;
+        background: #009688;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    header ul li{
+        list-style: none;
+        margin: 50px 20px;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    header ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+        margin-top: 60px;
+    }
+    #menubtn{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    #menubtn img{
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (min-width:1220px){
+    #menubtn{
+    visibility: hidden;
+    }
+}
+
+@media screen and (max-width:720px) {
+    #mainheader{
+ font-size: 50px;
+    }
+}
+
+/*Body Section*/
+body{
+    background-color:rgba(0,0,0,0.9);
+}
+
+#intro{
+    display: flexbox;
+    padding: 50px 100px;
+    margin-top: -240px;
+    background-color:rgb(108, 94, 9);
+    margin: 50px 100px;
+    border: 5px solid whitesmoke;
+    border-radius: 50px;
+    transition: 00.5s;
+}
+@media screen and (max-width:650px) {
+    #intro{
+        margin: 25px 50px;
+        padding: 20px 50px;
+    }
+}
+
+#intro h2{
+    text-align: center;
+}
+#intro p{
+    text-align: justify;
+}
+
+#museumimages{
+    padding: 20px 50px;
+    color: whitesmoke;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    margin: 25px 50px;
+    transition: 00.5s;
+}
+
+#museumimages img{
+    width: 47%;
+    height: auto;
+    border: 3px solid snow;
+    border-radius: 10px;
+}
+
+#museumimages h2{
+    text-align: center;
+}
+#museumimages p{
+    text-align: justify;
+}
+
+iframe{
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    margin: 25px 50px;
+    transition: 00.5s; 
+    padding: 20px 50px;
+    background-color: aliceblue;
+    margin-left: 27%;
+}
+
+#intro:hover,iframe:hover,#museumimages:hover,#form:hover,#donation:hover{
+    box-shadow: 0 0 30px 10px rgba(247, 243, 243, 0.916);
+}
+
+#museum7{
+    margin-bottom: 40px;
+}
+#museum5{
+    margin-bottom: 5px;
+}
+#museum3{
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:780px){
+    iframe{
+        height: 200px;
+        width: 200px;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:980px){
+    iframe{
+        margin-left: 10%;
+    }
+}
+
+/*Footer Section*/
+footer{
+    padding: 100px 0 20px;
+    background: #d8959530;
+    position: relative;
+}
+.btt{
+    margin-left: 46%;
+}
+.footerr{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerleft,.footerright{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footerright{
+    text-align: right;
+}
+.footerr h2{
+    margin: 10px 0;
+}
+.footerr p{
+    line-height: 35px;
+}
+#footeri{
+    max-width: 300px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.social img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: 00.5s;
+}
+.social{
+    text-align: center;
+}
+.social img:hover{
+    background: #009688;
+    color: whitesmoke;
+    transform: translateY(-15px);
+}
+.copy{
+    font-size: 15px;
+    color: #009688;
+    margin-top: 20px;
+    text-align: center;
+}
+@media  screen and (max-width:720px) {
+    .footerleft,.footerright{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+label {
+    width: 100px;
+    display: inline-block;
+}
+#output {
+    min-height: 50px;
+    border: 3px solid rgb(255, 254, 254); 
+    width: 50%; 
+    transform: translateX(50%);
+}
+#billhead,#billhead2,#billhead3,#billhead6,#tickets{
+    text-align: center;
+}
+#billhead5{
+    text-align: right;
+}
+#output h5,#output p{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#output h2{
+    padding-top: 2%;
+}
+
+@media  screen and (max-width:1022px) {
+    #output{
+        width: 100%;
+        transform: translateX(0%);
+    }
+}
+
+input {
+    margin-bottom: 10px;
+     width: 150px;
+}
+
+#form,#donation{
+    padding: 20px 50px;
+    color: whitesmoke;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    margin: 25px 50px;
+    transition: 00.5s;
+}
+#formheading,#formheading2{
+    text-align: center;
+}
+#foreign,#local,#extras,#durationp,#personaldetails,#paymentdetails,#details{
+    padding: 5px;
+}
+
+#placeorder,#addorder{
+    width: 15%;
+    height: 5%;
+}
