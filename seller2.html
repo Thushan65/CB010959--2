@@ -1,0 +1,153 @@
+<!--SELLER2 PAGE HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head Section-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zesta</title>
+    <link rel="stylesheet" href="./seller2.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+</head>
+
+<!--Header Section-->
+<header id="header">
+
+    <div class="navbar">
+        <a href="./home.html"><img src="./seresdipity.png" alt="Logo" id="logo"></a>
+    
+        <ul id="navigation">
+            <li><a href="./home.html" target="_blank">Home</a></li>
+            <li><a href="./tea plantation.html" target="_blank">Tea Plantations</a></li>
+            <li><a href="./tea museum.html" target="_blank">Tea Museums</a></li>
+            <li><a href="./by products.html" target="_blank">By Products</a></li>
+            <li><a href="./tea sales.html" target="_blank">Tea Sales</a></li>
+            <li><a href="./purchase.html" target="_blank">Purchase & Donate</a></li>
+            <li><a href="./seller1.html" target="_blank">Dilmah Tea</a></li>
+        </ul>
+    </div>
+
+    <div id="menubtn">
+        <img src="./menu.jpg" alt="menu" id="menu">
+    </div>
+    <h1 id="mainheader">Zesta</h1>
+
+    <!--Java Script-->
+    <script>
+        var menubtn =document.getElementById("menubtn")
+        var navigation =document.getElementById("navigation")
+        var menu =document.getElementById("menu")
+        navigation.style.right="-250px";
+
+        menubtn.onclick=function(){
+            if(navigation.style.right=="-250px"){
+                navigation.style.right="0";
+            }
+            else{
+                navigation.style.right="-250px";
+            }
+        }
+    </script>
+</header>
+
+<!--Body Section-->
+<body>
+
+<section class="rrr">
+
+    <section id="discription">
+        <h2>~About Zesta~</h2>
+        <br>
+        <p>
+            Zesta, a flagship tea brand for Watawala Tea Ceylon Ltd., was introduced in 1998. Zesta Tea is now known and regarded as a brand that provides superior Ceylon tea because of its uncompromising quality and superb flavour. In the comparatively short time of more than 15 years, Watawala Tea Ceylon Ltd. has increased its projected market share to 35% now. Zesta is powerful because of their exposure, which guarantees that they are in line with global standards of procedure and quality, and because their group holding company is a joint venture between Sunshine Holdings and Pyramid Wilmar Plantations.
+        </p>
+        <p>
+            The world consumes more than seven billion cups of tea annually, making tea the second most popular beverage worldwide behind water. Tea has given its customers a sense of warmth and peace ever since it was unintentionally discovered in China about 5000 years ago. Zesta has won over tea lovers all over the world with their alluring selection of Ceylon teas and their unwavering enthusiasm and devotion, which has inspired us to make the ideal cup of tea.
+        </p>
+        <br>
+    </section>
+
+    <section id="images">
+        <div id="image1">
+            <img src="./zesta1.jpg" alt="Zesta tea" id="zestaimg1">
+        </div>
+        <div id="image2">
+            <img src="./zesta4.jpg" alt="Zesta tea" id="zestaimg">
+        </div>
+        <div id="image3">
+            <img src="./zesta3.jpg" alt="Zesta tea" id="zestaimg">
+        </div>
+        <div id="image4">
+            <img src="./zesta2.jpg" alt="Zesta tea" id="zestaimg">
+        </div>
+        <br>
+    </section>
+  
+    <section id="video">
+        <video src="./Zesta Tea (living room).mp4" preload="auto" loop controls width="870px" height="480px"></video>
+    </section>
+    <br>
+</section>
+
+</body>
+
+<!--Footer Section-->
+<footer>
+    <h2><a href="#logo" class="btt">Back to top</a></h2>
+    <img src="./seresdipity.png" alt="serendipity" id="footeri">
+    <br><br>
+
+    <div class="footerr">
+        <div class="footerleft">
+            <h2>Information</h2>
+            <p>Ownership :Serendipity Group</p>
+            <p>Address:121/3,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kandy Road,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kandy.</p>
+            <p>Open hours: Monday to Saturday - 9am to 5pm</p> 
+        </div>
+
+        <div class="footerright">
+            <h2>Contact Us:</h2>
+            <p>Mail us:serendipity@example.com</p>
+            <p>Call us:+94-8100000000</p>
+        </div>
+
+    </div>
+
+    <div class="social">
+        <a href="#fb"><img src="./fb.jpg" alt="Facebook"></a>
+        <a href="#whatsapp"><img src="./wtsp.png" alt="Whatsapp"></a>
+        <a href="#ig"><img src="./ig.png" alt="Instergram"></a>
+        <a href="#mail"><img src="./mail.jpg" alt="Gmail"></a>
+        <a href="#linkedin"><img src="./in.png" alt="LinkedIN"></a>
+        <a href="#tiktok"><img src="./tiktok.png" alt="Tiktok"></a>
+    </div>
+    
+    <p class="copy">&copy; Copy Right 2022 </p>
+
+        <!--Resources:
+                Wikipedia
+                ZestaCeylontea.com
+            Images:www.Google.com
+            Video:www.Zestaceylontea.com
+                  youtube-->
+                  
+</footer>
+
+</html>
+
+
+

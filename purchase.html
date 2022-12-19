@@ -1,0 +1,404 @@
+<!--PURCHASE PAGE HTML-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head Section-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase and Donate</title>
+    <link rel="stylesheet" href="./purchase.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<!--Header Section-->
+<header id="header">
+
+    <div class="navbar">
+        <a href="./home.html"><img src="./seresdipity.png" alt="Logo" id="logo"></a>
+    
+        <ul id="navigation">
+            <li><a href="./home.html" target="_blank">Home</a></li>
+            <li><a href="./tea plantation.html" target="_blank">Tea Plantations</a></li>
+            <li><a href="./tea museum.html" target="_blank">Tea Museums</a></li>
+            <li><a href="./by products.html" target="_blank">By Products</a></li>
+            <li><a href="./tea sales.html" target="_blank">Tea Sales</a></li>
+            <li><a href="./purchase.html" target="_blank">Purchase & Donate</a></li>
+        </ul>
+    </div>
+
+    <div id="menubtn">
+        <img src="./menu.jpg" alt="menu" id="menu">
+    </div>
+
+    <h1 id="mainheader">Purchase and Donate</h1>
+
+    <script>
+        var menubtn =document.getElementById("menubtn")
+        var navigation =document.getElementById("navigation")
+        var menu =document.getElementById("menu")
+        navigation.style.right="-250px";
+
+        menubtn.onclick=function(){
+            if(navigation.style.right=="-250px"){
+                navigation.style.right="0";
+            }
+            else{
+                navigation.style.right="-250px";
+            }
+        }
+    </script>
+
+</header>
+
+<!--Body Section-->
+<body>
+
+    <section id="purchase">
+
+        <div id="intro">
+            <h2>-Purchase A Lovely Merchandise-</h2>
+            <p>
+                There can be no trip to Sri Lanka without some retail therapy. After savouring the country's sunny weather, beautiful beaches, and mouthwatering cuisine, you need to bring a piece of it back with you.Let's buy some amazing souvenirs for you and your loved ones.
+            </p>
+        </div>
+
+        <div id="gem">
+            <h3>-Jewellery and gems-</h3>
+            <br>
+            <p>Sri Lanka was once popularly referred to as "Ratna-Deepa," which means Gem Island. This name reflects the natural abundance of our nation. This has been attested to by well-known travellers like Marco Polo, who claimed that our island was home to the finest sapphires, topazes, amethysts, and other gems in the entire globe.</p>
+            <br>
+
+            <div id="gem1">
+                <img src="./gem1.jpg" alt="gems" id="pic1" >
+                <img src="./gem2.jpg" alt="gems" >
+            </div>
+            <hr>
+
+            <br>
+
+            <h4>Click here to buy some lovely Jewellery & Gem:</h4>
+            <br>
+            <a href="https://www.voguejewellers.lk/product-category/gems/"><img src="./vogue.png" alt="voguejewellers" id="shop"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.rajajewellers.com/"><img src="./raja.png" alt="rajajewellers" id="shop"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://ceylongemhub.com/"><img src="./gemhub.jpg" alt="ceylongemhub" id="shop"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://lusterblue.lk/"><img src="./luster.png" alt="lusterblue" id="shop"></a>
+            <br>
+
+        </div>
+
+        <div id="wood">
+
+            <h3>-Wood Carvings-</h3>
+            <br>
+            <div id="wood1">
+                <img src="./wood1.jpg" alt="Wood Carvings">
+                <img src="./wood2.jpg" alt="Wood Carvings" id="pic2">
+            </div>
+            <hr>
+            <br>
+            <h4>Click here to buy some lovely Wood Carvings:</Canvas></h4>
+            <br>
+            <a href="https://www.oakraywoodcarvings.com/index.html"><img src="./oak ray.png" alt="oakraywoodcarvings" id="shop"></a>
+            <a href="http://www.laksala.gov.lk/"><img src="./Laksala_logo_TN-e1632234005199.png" alt="laksala" id="shop"></a>
+        </div>
+        <br>
+    </section>
+
+
+    
+<div id="buy">
+
+    <h2 id="shophead">-Let's Buy Some Products-</h2>
+    <br>
+    <div id="points">
+        <a name="points"></a>
+        <p id="points"></p>
+    </div>
+
+    <br>
+
+    <div>
+        <h3 class="itemtital">~Gems~</h3>
+        <hr><hr>
+        <div class="shopitems">
+            <div class="shopitem">
+                <span class="itemt">Blue Sapphire</span>
+                <img class="itemi" src="./1.jpg">
+                <div class="itemd">
+                    <span class="itemp">$1999.99</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Pink Sapphire</span>
+                <img class="itemi" src="./2.jpg">
+                <div class="itemd">
+                    <span class="itemp">$1400.00</span>
+                    <button class="itemb"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Ruby</span>
+                <img class="itemi" src="./3.jpeg">
+                <div class="itemd">
+                    <span class="itemp">$1199.99</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Emerald</span>
+                <img class="itemi" src="./4.jpg">
+                <div class="itemd">
+                    <span class="itemp">$2099.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="itemtital">~Rings~</h3>
+        <hr><hr>
+        <div class="shopitems">
+            <div class="shopitem">
+                <span class="itemt">Diamond Ring</span>
+                <img class="itemi" src="./16.jpg">
+                <div class="itemd">
+                    <span class="itemp">$10000.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Diamond Ring</span>
+                <img class="itemi" src="./13.png">
+                <div class="itemd">
+                    <span class="itemp">$2400.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Blue Sapphire Ring</span>
+                <img class="itemi" src="./14.jpg">
+                <div class="itemd">
+                    <span class="itemp">$2400.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Crystal Ring</span>
+                <img class="itemi" src="./15.jpg">
+                <div class="itemd">
+                    <span class="itemp">$1099.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="itemtital">~Wood Carvings~</h3>
+        <hr><hr>
+        <div class="shopitems">
+            <div class="shopitem">
+                <span class="itemt">Wooden Bear</span>
+                <img class="itemi" src="./6.jpg">
+                <div class="itemd">
+                    <span class="itemp">$11.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Wooden Elephant</span>
+                <img class="itemi" src="./7.jpg">
+                <div class="itemd">
+                    <span class="itemp">$17.00</span>
+                    <button class="itemb"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Wooden Mask</span>
+                <img class="itemi" src="./8.jpeg">
+                <div class="itemd">
+                    <span class="itemp">$7.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shopitem">
+                <span class="itemt">Wooden Dog</span>
+                <img class="itemi" src="./11.jpg">
+                <div class="itemd">
+                    <span class="itemp">$21.00</span>
+                    <button class="itemb" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<hr><hr><hr>
+<br>
+
+    <div id="cartlocal1">
+            <h2 class="itemtital1">CART</h2>
+            <hr>
+        <div id="lc">
+            <div class="cartrow">
+                <span class="carti carth cartc">ITEM</span>
+                <span class="cartpp carth cartc">PRICE</span>
+                <span class="cartq carth cartc">QUANTITY</span>
+            </div>
+            <div class="cartitems" id="cart2">
+            </div>
+            <div class="carttotal">
+                <strong class="cartt">Total</strong>
+                <span class="cartp">$0</span>
+            </div>
+        </div>
+            <div class="buttons">
+                <button id="btnpurchase" type="button">PURCHASE</button>
+                <button class="btnfavourite" type="button">ADD TO FAVOURITES</button>
+                <button id="btnorder" type="button">ORDER FAVOURITES</button>
+                <a href="#points"><button id="btnloyalty" type="button">CHECK LOYALTY</button></a>
+            </div>
+        
+    </div>
+</div>
+
+
+
+    <section id="donate">
+
+        <h2>Give A Kind Donation</h2>
+        <br>
+        <p>
+            One of the middle-income countries most susceptible to the COVID-19 pandemic's economic effects is Sri Lanka. The amount of money a nation makes from exports is a major way that vulnerabilities might grow. Although Sri Lanka is not particularly vulnerable to interruptions in the global supply chain, it is problematic that it depends on a small number of exports and export destinations. One of the areas affected is Sri Lanka's export agriculture sector, which is dominated by tea, rubber, and coconut. They generate 20% of all export revenue each year, with tea exports alone accounting for around 12%.
+            Sri Lanka's tea export revenue and production had already been on the decline for a few years by the time COVID-19 struck. Production levels have been impacted over time by unfavourable weather patterns as well as structural problems that have persisted for a while, like labour shortages and a lack of technological adoption.
+            <br>
+            Therefore a small donation like $1 will make a huge difference to the Ceylon Tea Industry!
+        </p>
+        <br><br>
+
+        <form method="get">
+            <fieldset id="personaldetails">
+                <legend>Personal Details</legend>
+                    <p>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname" required>
+                    </p>
+                    <p>
+                        <label for="lname">Last Name</label>
+                        <input type="text"required>
+                    </p>
+                    <p>
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" id="gender">male 
+                        <input type="radio" name="gender" id="gender">female 
+            
+            
+                    </p>
+                    <p>
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" required></textarea>
+                    </p>
+                    <p>
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </p>
+                    <p>
+                        <label for="country">Country</label>
+                        <input type="country" name="country" id="country" required>
+                    </p>
+            </fieldset>
+            <br>
+            <fieldset id="paymentdetails">
+                    <legend>Payment Details</legend>
+                    <p>
+                        <label for="cardnumber">Credit/Debit Card Number</label>
+                        <input type="text" name="cardnumber" id="cardnumber" required>
+                     </p>
+                     <p>
+                        <label for="cardname">Name On Card</label>
+                        <input type="text" name="cardname" id="cardname" required>
+                     </p>
+                     <p>
+                        <label for="expdate">Expired Date</label>
+                        <input type="date" name="expdate" id="expdate" required>
+                        <label for="cvv">CVV</label>
+                        <input type="number" name="cvv" id="cvv" required>
+                     </p>
+            </fieldset>
+            <br>
+            <div id="paymentlogo">
+                <img src="./visa.jpeg" alt="visa" id="card">
+                <img src="./mastercard.jpg" alt="mastercard" id="card">
+                <img src="./AmericanExpress.png" alt="AmericanExpress" id="card">
+                <img src="./unionpay.png" alt="unionpay" id="card">
+            </div>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </form>
+        <br>
+
+    </section>
+
+    <script src="./Scripts/purchase.js"></script>
+</body>
+
+<!--Footer Section-->
+<footer>
+    <h2><a href="#logo" class="btt">Back to top</a></h2>
+    <img src="./seresdipity.png" alt="serendipity" id="footeri">
+    <br><br>
+
+    <div class="footerr">
+        <div class="footerleft">
+            <h2>Information</h2>
+            <p>Ownership :Serendipity Group</p>
+            <p>Address:121/3,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kandy Road,<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kandy.</p>
+            <p>Open hours: Monday to Saturday - 9am to 5pm</p> 
+        </div>
+
+
+        <div class="footerright">
+            <h2>Contact Us:</h2>
+            <p>Mail us:serendipity@example.com</p>
+            <p>Call us:+94-8100000000</p>
+        </div>
+    </div>
+
+    <div class="social">
+        <a href="#fb"><img src="./fb.jpg" alt="Facebook"></a>
+        <a href="#whatsapp"><img src="./wtsp.png" alt="Whatsapp"></a>
+        <a href="#ig"><img src="./ig.png" alt="Instergram"></a>
+        <a href="#mail"><img src="./mail.jpg" alt="Gmail"></a>
+        <a href="#linkedin"><img src="./in.png" alt="LinkedIN"></a>
+        <a href="#tiktok"><img src="./tiktok.png" alt="Tiktok"></a>
+    </div>
+
+    <p class="copy">&copy; Copy Right 2022 </p>
+
+        <!--Resources:
+                Wikipedia
+            Images:www.Google.com-->
+            
+</footer>
+</html>
+
+
